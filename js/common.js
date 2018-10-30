@@ -12,7 +12,9 @@ $(function(){
     var site = getQueryString('d');
     var part = getQueryString('p');
     var id = getQueryString('id');
-    window.location = site+'1985.xyz:8080/'+part+'/'+id;
+    var url = site+'1985.xyz:8080/'+part+'/'+id;
+    window.open(url);
+    
     
 });
 
