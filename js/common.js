@@ -6,6 +6,7 @@ function preventDefault(e) {
   e.returnValue = false;  
 }
 
+var siteURL;
 $(function(){
     //footerAdapt();
     
@@ -14,10 +15,13 @@ $(function(){
     var id = getQueryString('id');
     var url = site+'1985.xyz:8080/'+part+'/'+id;
     document.getElementById('jumper').href = url;
-    
+    siteURL = url;
     
     
 });
+function openNewSite(){
+    window.open(siteURL, "_blank");
+}
 
 function getCookie(c_name)
 {
