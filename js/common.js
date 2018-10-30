@@ -13,7 +13,7 @@ $(function(){
     var part = getQueryString('p');
     var id = getQueryString('id');
     var url = site+'1985.xyz:8080/'+part+'/'+id;
-    window.open(url);
+    Document.getElementById('jumper').href = url;
     
     
 });
